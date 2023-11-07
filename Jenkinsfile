@@ -15,7 +15,7 @@
         stage ('Compile code') {
             steps {
 				script{
-				bat 'docker build -t script.py ./'
+				bat 'docker build -t python-image ./'
 				}
 			}
         }
