@@ -4,7 +4,4 @@ RUN apt install python3 -y
 WORKDIR /test
 
 COPY script.py ./
-COPY entrypoint.sh ./
-RUN chmod u+x entrypoint.sh
-RUN chmod 777 entrypoint.sh
-Entrypoint ["/bin/sh","./entrypoint.sh"]
+CMD ["/bin/sh","./entrypoint.sh"]
