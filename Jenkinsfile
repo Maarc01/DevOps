@@ -22,7 +22,7 @@
 		stage ('execute code') {
             steps {
 				script{
-                bat 'docker run -t -v D:\\DevOps\\Jenkins\\DevOps:/data Python-image'
+                bat 'docker run -t -v D:\\DevOps\\Jenkins\\DevOps:/data python-image'
                 
 				}
 			}
